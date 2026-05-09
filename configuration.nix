@@ -1,0 +1,41 @@
+# =============================================================================
+# NixOS - ThinkPad X260 (aesarbil)
+# =============================================================================
+
+{ config, pkgs, ... }:
+
+{
+  imports = [
+    ./hardware-configuration.nix
+    ./modules/boot.nix
+    ./modules/hardware.nix
+    ./modules/red.nix
+    ./modules/localizacion.nix
+    ./modules/escritorio.nix
+    ./modules/audio.nix
+    ./modules/energia.nix
+    ./modules/servicios.nix
+    ./modules/usuario.nix
+    ./modules/paquetes.nix
+  ];
+
+  # ===========================================================================
+  # NIX
+  # ===========================================================================
+
+  nixpkgs.config.allowUnfree = true;
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  nix.gc = {
+    automatic = true;
+    dates     = "weekly";
+    options   = "--delete-older-than 30d";
+  };
+
+  # ===========================================================================
+  # VERSIÓN (no cambiar manualmente)
+  # ===========================================================================
+
+  system.stateVersion = "25.11";
+}
