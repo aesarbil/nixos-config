@@ -1,4 +1,16 @@
+# Secrets y claves
 *.key
 *.pem
 *.secret
 secrets/
+.secrets/
+
+# Archivos temporales
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Resultados de build de nix (si los hubiera)
+result
+result-*

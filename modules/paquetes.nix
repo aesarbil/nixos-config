@@ -63,7 +63,8 @@
 
     # --- Hyprland ecosystem ---
     waybar                  # Barra de estado
-    dunst                   # Notificaciones
+    #dunst                   # Notificaciones
+    swaynotificationcenter  # Nuevas notificaciones
     hyprlock                # Bloqueo de pantalla
     hypridle                # Gestión de inactividad
     hyprsunset              # Temperatura de color (night mode)
