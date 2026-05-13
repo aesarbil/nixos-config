@@ -27,6 +27,7 @@
     jq                      # Procesador JSON para terminal
     onlyoffice-desktopeditors  # Suite ofimática compatible con Microsoft Office
     pandoc                  # Conversor universal de documentos
+    libnotify  # provee notify-send
 
     # --- Diagnóstico de hardware ---
     htop                    # Monitor de procesos interactivo
