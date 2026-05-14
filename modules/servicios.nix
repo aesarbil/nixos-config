@@ -51,7 +51,7 @@
           label   = "Dotfiles";
           path    = "/home/aesarbil/.config";
           devices = [ "nas" ];
-          type    = "sendonly";
+          type    = "sendreceive";
         };
       };
     };

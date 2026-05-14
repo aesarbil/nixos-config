@@ -1,0 +1,21 @@
+// Bases de datos SQLite en uso
+*.db-shm
+*.db-wal
+*.lock
+*.sqlite-shm
+*.sqlite-wal
+// Cache de apps
+BraveSoftware
+chromium
+google-chrome
+// Syncthing no se sincroniza a sí mismo
+syncthing
+// Navegadores — cookies y sesiones
+epiphany
+// Apps con tokens de sesión
+Element
+evolution
+obsidian
+// Sistema
+dconf
+session
