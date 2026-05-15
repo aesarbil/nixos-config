@@ -27,8 +27,7 @@
     jq                      # Procesador JSON para terminal
     onlyoffice-desktopeditors  # Suite ofimática compatible con Microsoft Office
     pandoc                  # Conversor universal de documentos
-    libnotify               # provee notify-send
-    nodejs                  # Entorno de ejecución JavaScript — requerido para servidores MCP
+    libnotify  # provee notify-send
 
     # --- Diagnóstico de hardware ---
     htop                    # Monitor de procesos interactivo
@@ -74,7 +73,7 @@
     awww                    # Daemon de wallpapers con transiciones animadas
     waypaper                # GUI para selección de wallpapers (backup del script rofi)
     matugen                 # Generador de paletas de color desde el wallpaper
-    qt6Packages.qt6ct       # Configuración de temas Qt6
+    qt6ct                   # Configuración visual de apps Qt
 
     # --- Capturas de pantalla ---
     grim                    # Captura de pantalla para Wayland
