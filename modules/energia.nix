@@ -43,4 +43,8 @@
   };
 
   services.thermald.enable = true;
+  services.logind = {
+      lidSwitch = "suspend";
+      lidSwitchExternalPower = "suspend";
+  };
 }
