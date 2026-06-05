@@ -69,7 +69,7 @@
     hyprpicker              # Selector de color con cuentagotas para Wayland
     wleave                  # Menú de salida/apagado/suspensión estilo Wayland
     rofi                    # Lanzador de apps y menú multipropósito (Wayland)
-    avizo                   # OSD flotante para brillo y volumen
+    wob                     # OSD barra minimalista para brillo y volumen
     swappy                  # Editor rápido de capturas de pantalla
     awww                    # Daemon de wallpapers con transiciones animadas
     waypaper                # GUI para selección de wallpapers (backup del script rofi)

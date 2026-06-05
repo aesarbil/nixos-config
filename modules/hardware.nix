@@ -17,9 +17,6 @@
 
   # --- Parámetros del kernel para Skylake + HD 520 ---
   boot.kernelParams = [
-    # Panel Self Refresh: apaga el enlace GPU-pantalla cuando el contenido
-    # no cambia (leer, terminal estática). Ahorra ~0.5-1W
-    "i915.enable_psr=1"
 
     # Frame Buffer Compression: comprime el framebuffer en VRAM.
     # Menos ancho de banda de memoria = menos consumo del iGPU
