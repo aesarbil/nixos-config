@@ -25,10 +25,10 @@
       CPU_MAX_PERF_ON_BAT = 80;
       # --- Umbrales de carga para batería ThinkPad ---
       # 75/90 es el rango óptimo para longevidad (evita estrés en extremos)
-      START_CHARGE_THRESH_BAT0 = 75;
-      STOP_CHARGE_THRESH_BAT0  = 90;
-      START_CHARGE_THRESH_BAT1 = 75;
-      STOP_CHARGE_THRESH_BAT1  = 90;
+      # START_CHARGE_THRESH_BAT0 = 75;
+      # STOP_CHARGE_THRESH_BAT0  = 90;
+      # START_CHARGE_THRESH_BAT1 = 75;
+      # STOP_CHARGE_THRESH_BAT1  = 90;
       # --- WiFi ---
       # En AC lo dejamos encendido para máxima velocidad de red
       # En batería activamos power saving del driver WiFi

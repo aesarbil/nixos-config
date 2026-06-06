@@ -63,6 +63,9 @@
   # --- Actualizaciones de firmware ---
   services.fwupd.enable = true;
 
+  # --- Daemon diagnostico de bateria ---
+  services.upower.enable = true;
+
   # --- xserver (necesario para xkb aunque no uses X11) ---
   services.xserver.enable = true;
 

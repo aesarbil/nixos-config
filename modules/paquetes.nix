@@ -38,6 +38,7 @@
     libva-utils             # Verificación de aceleración de vídeo VAAPI
     mesa-demos              # Demos OpenGL para verificar aceleración gráfica
     inxi                    # Info detallada del sistema en terminal
+    upower                  # Diagnostico de baterias
 
     # --- Aplicaciones de escritorio ---
     librewolf               # Navegador principal basado en Firefox, privacidad mejorada
