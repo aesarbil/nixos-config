@@ -12,28 +12,26 @@
     settings = {
       Theme = {
         CursorTheme = "Bibata-Modern-Classic";
-        CursorSize  = 24; # entero, no string
+        CursorSize  = 24;
       };
       General = {
-        InputMethod = ""; # desactiva el input method virtual (evita lag en el greeter)
+        InputMethod = "";
+      };
+      Autologin = {
+        User    = "aesarbil";
+        Session = "hyprland.desktop";
       };
     };
   };
-
   # ── Input ──────────────────────────────────────────────────────────────────
-  # Soporte unificado de ratón y touchpad (necesario para Wayland)
   services.libinput.enable = true;
-
   # ── Compositor ─────────────────────────────────────────────────────────────
-  # Hyprland como compositor Wayland principal
   programs.hyprland = {
     enable          = true;
-    xwayland.enable = true; # compatibilidad con apps que no soportan Wayland nativo
+    xwayland.enable = true;
     withUWSM        = false;
   };
-
   # ── Portales XDG ───────────────────────────────────────────────────────────
-  # Necesarios para screen sharing, file picker, etc. desde apps Wayland/XWayland
   xdg.portal = {
     enable       = true;
     extraPortals = with pkgs; [
@@ -41,20 +39,16 @@
       xdg-desktop-portal-gtk
     ];
   };
-
   # ── Programas ──────────────────────────────────────────────────────────────
   programs.fish.enable    = true;
   programs.firefox.enable = true;
-
   # ── Variables de entorno ───────────────────────────────────────────────────
   environment.variables = {
     GTK_THEME     = "catppuccin-macchiato-blue-standard";
     XCURSOR_THEME = "Bibata-Modern-Classic";
     XCURSOR_SIZE  = "24";
   };
-
   # ── Qt ─────────────────────────────────────────────────────────────────────
-  # Usa el tema GTK también para apps Qt (coherencia visual)
   qt = {
     enable        = true;
     platformTheme = "gtk2";
