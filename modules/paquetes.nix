@@ -9,6 +9,7 @@
     starship                # Prompt bonito y configurable para fish
     fastfetch               # Info del sistema al abrir terminal (neofetch moderno)
     yazi                    # File manager TUI con previsualizaciones
+    neovim                  # Editor de codigo
 
     # --- Editores ---
     helix                   # Editor moderno modal, "pilas incluidas", sin config necesaria
