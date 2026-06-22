@@ -15,6 +15,17 @@
     helix                   # Editor moderno modal, "pilas incluidas", sin config necesaria
     # neovim                # Disponible si se quiere explorar en el futuro
 
+    # --- GStreamer y multimedia ---
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-bad
+    gst_all_1.gst-plugins-ugly
+    gst_all_1.gst-libav  # Codecs adicionales vía FFmpeg
+
+    # --- Accesibilidad ---
+    at-spi2-core
+
     # --- Herramientas básicas ---
     curl                    # Transferencia de datos por URL
     wget                    # Descarga de archivos por HTTP/FTP
