@@ -53,7 +53,8 @@
     upower                  # Diagnostico de baterias
 
     # --- Aplicaciones de escritorio ---
-    librewolf               # Navegador principal basado en Firefox, privacidad mejorada
+    #  librewolf               # Navegador principal basado en Firefox, privacidad mejorada
+    mullvad-browser           # Navegador de privacidad basado en Firefox (Tor Project + Mullvad)
     obsidian                # Notas en Markdown / documentación homelab
     thunderbird             # Cliente de correo electrónico
     remmina                 # Cliente de escritorio remoto (RDP, VNC, SSH)
