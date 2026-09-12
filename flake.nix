@@ -9,8 +9,12 @@
     claude-desktop = {
       url = "github:aaddrick/claude-desktop-debian";
     };
+    zen-browser = {
+      url                    = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
-  outputs = { self, nixpkgs, home-manager, claude-desktop }: {
+  outputs = { self, nixpkgs, home-manager, claude-desktop, zen-browser }: {
     nixosConfigurations.thinkpad-x260 = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -25,7 +29,10 @@
           nixpkgs.overlays = [ claude-desktop.overlays.default ];
           nixpkgs.config.allowUnfreePredicate = pkg:
             builtins.elem (pkgs.lib.getName pkg) [ "claude-desktop" ];
-          environment.systemPackages = [ pkgs.claude-desktop ];
+          environment.systemPackages = [
+            pkgs.claude-desktop
+            zen-browser.packages.x86_64-linux.default
+          ];
         })
       ];
     };

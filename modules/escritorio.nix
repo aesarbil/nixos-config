@@ -44,9 +44,10 @@
   programs.firefox.enable = true;
   # ── Variables de entorno ───────────────────────────────────────────────────
   environment.variables = {
-    GTK_THEME     = "catppuccin-macchiato-blue-standard";
-    XCURSOR_THEME = "Bibata-Modern-Classic";
-    XCURSOR_SIZE  = "24";
+    GTK_THEME          = "catppuccin-macchiato-blue-standard";
+    XCURSOR_THEME      = "Bibata-Modern-Classic";
+    XCURSOR_SIZE       = "24";
+    MOZ_ENABLE_WAYLAND = "1";
   };
   # ── Qt ─────────────────────────────────────────────────────────────────────
   qt = {

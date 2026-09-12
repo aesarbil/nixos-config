@@ -51,6 +51,7 @@
     mesa-demos              # Demos OpenGL para verificar aceleración gráfica
     inxi                    # Info detallada del sistema en terminal
     upower                  # Diagnostico de baterias
+    android-tools           # Diagnostico android
 
     # --- Aplicaciones de escritorio ---
     #  librewolf               # Navegador principal basado en Firefox, privacidad mejorada
@@ -70,6 +71,8 @@
     karere                  # Cliente de MEGA para escritorio
     telegram-desktop        # Cliente de Telegram
     birdtray                # Thunderbird modo daemon
+    sweethome3d.application             # Diseño grafico
+    sweethome3d.furniture-editor
 
     # --- Gestor de archivos gráfico ---
     nautilus                # Gestor de archivos GNOME, compatible con Hyprland
