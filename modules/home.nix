@@ -50,4 +50,8 @@
   # --- waybar ---
   home.file.".config/waybar/config".source    = ./dotfiles/waybar/config;
   home.file.".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
+
+  # --- yazi ---
+  home.file.".config/yazi/yazi.toml".source   = ./dotfiles/yazi/yazi.toml;
+  home.file.".config/yazi/keymap.toml".source = ./dotfiles/yazi/keymap.toml;
 }
