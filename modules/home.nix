@@ -54,4 +54,9 @@
   # --- yazi ---
   home.file.".config/yazi/yazi.toml".source   = ./dotfiles/yazi/yazi.toml;
   home.file.".config/yazi/keymap.toml".source = ./dotfiles/yazi/keymap.toml;
+
+  # --- fish (fish_variables NO se versiona — estado interno, fish lo reescribe en caliente) ---
+  home.file.".config/fish/config.fish".source                              = ./dotfiles/fish/config.fish;
+  home.file.".config/fish/conf.d/fish_frozen_key_bindings.fish".source     = ./dotfiles/fish/conf.d/fish_frozen_key_bindings.fish;
+  home.file.".config/fish/functions/fish_user_key_bindings.fish".source    = ./dotfiles/fish/functions/fish_user_key_bindings.fish;
 }
