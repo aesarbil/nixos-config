@@ -59,4 +59,8 @@
   home.file.".config/fish/config.fish".source                              = ./dotfiles/fish/config.fish;
   home.file.".config/fish/conf.d/fish_frozen_key_bindings.fish".source     = ./dotfiles/fish/conf.d/fish_frozen_key_bindings.fish;
   home.file.".config/fish/functions/fish_user_key_bindings.fish".source    = ./dotfiles/fish/functions/fish_user_key_bindings.fish;
+
+  # --- hypridle / hyprlock (NO migran a Lua, confirmado issue hyprwm/hyprlock#1034) ---
+  home.file.".config/hypr/hypridle.conf".source = ./dotfiles/hypr/hypridle.conf;
+  home.file.".config/hypr/hyprlock.conf".source  = ./dotfiles/hypr/hyprlock.conf;
 }
