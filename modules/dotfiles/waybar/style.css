@@ -1,0 +1,134 @@
+@import 'matugen/colors.css';
+
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: alpha(@background, 0.85);
+    color: @on_surface;
+    border-radius: 12px;
+    border: 1px solid alpha(@primary, 0.3);
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 0 8px;
+}
+
+#workspaces button {
+    padding: 0 6px;
+    color: alpha(@on_surface, 0.5);
+    background: transparent;
+    border-radius: 8px;
+    margin: 4px 2px;
+    transition: all 0.2s ease;
+}
+
+#workspaces button:hover {
+    background: alpha(@primary, 0.15);
+    color: @on_surface;
+}
+
+#workspaces button.active {
+    background: alpha(@primary, 0.25);
+    color: @primary;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    background: alpha(@error, 0.3);
+    color: @error;
+}
+
+#window {
+    color: alpha(@on_surface, 0.7);
+    padding: 0 10px;
+    font-style: italic;
+}
+
+#clock {
+    color: @primary;
+    font-weight: bold;
+    padding: 0 12px;
+}
+
+#battery,
+#battery.bat1 {
+    color: #a6e3a1;
+    padding: 0 8px;
+}
+
+#battery.warning {
+    color: #f9e2af;
+}
+
+#battery.critical {
+    color: @error;
+    animation: blink 1s infinite;
+}
+
+#battery.charging {
+    color: #a6e3a1;
+}
+
+@keyframes blink {
+    to { color: transparent; }
+}
+
+#cpu {
+    color: @secondary;
+    padding: 0 8px;
+}
+
+#memory {
+    color: @primary;
+    padding: 0 8px;
+}
+
+#network {
+    color: @on_surface;
+    padding: 0 8px;
+}
+
+#network.disconnected {
+    color: @error;
+}
+
+#pulseaudio {
+    color: @secondary;
+    padding: 0 8px;
+}
+
+#pulseaudio.muted {
+    color: alpha(@on_surface, 0.4);
+}
+
+#backlight {
+    color: @on_surface;
+    padding: 0 8px;
+}
+
+#tray {
+    padding: 0 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: alpha(@error, 0.3);
+    border-radius: 6px;
+}
+
+#custom-notification {
+    color: @primary;
+    padding: 0 8px;
+}

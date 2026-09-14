@@ -1,0 +1,35 @@
+[config]
+
+[templates.swaync-colors]
+input_path = '~/.config/matugen/templates/swaync-colors.css.templ'
+output_path = '~/.config/swaync/matugen/colors.css'
+
+[templates.waybar-colors]
+input_path = '~/.config/matugen/templates/waybar-colors.css.templ'
+output_path = '~/.config/waybar/matugen/colors.css'
+
+[templates.hyprland-colors]
+input_path = '~/.config/matugen/templates/hyprland-colors.lua.templ'
+output_path = '~/.config/hypr/matugen-colors.lua'
+
+[templates.rofi-colors]
+input_path = '~/.config/matugen/templates/rofi-colors.rasi.templ'
+output_path = '~/.config/rofi/themes/matugen-colors.rasi'
+
+[templates.hyprlock-colors]
+input_path = '~/.config/matugen/templates/hyprlock-colors.conf.templ'
+output_path = '~/.config/hypr/hyprlock-colors.conf'
+
+[templates.kitty-colors]
+input_path = '~/.config/matugen/templates/kitty-colors.conf.templ'
+output_path = '~/.config/kitty/matugen-colors.conf'
+
+[templates.yazi-theme]
+input_path  = '~/.config/matugen/templates/yazi-theme.toml.templ'
+output_path = '~/.config/yazi/theme.toml'
+
+
+[templates.wob-colors]
+input_path = '~/.config/matugen/templates/wob-colors.sh.templ'
+output_path = '~/.config/matugen/wob-colors.sh'
+

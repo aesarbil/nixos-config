@@ -1,0 +1,59 @@
+[manager]
+cwd             = { fg = "#8aadf4" }
+hovered         = { fg = "#{{colors.surface.default.hex_stripped}}", bg = "#{{colors.primary.default.hex_stripped}}" }
+previewed       = { bg = "#1e2030" }
+selected        = { fg = "#{{colors.primary.default.hex_stripped}}", bg = "#1e2030" }
+marker_selected = { fg = "#{{colors.primary.default.hex_stripped}}", bg = "#{{colors.primary.default.hex_stripped}}" }
+marker_copied   = { fg = "#a6da95", bg = "#a6da95" }
+marker_cut      = { fg = "#ed8796", bg = "#ed8796" }
+
+[status]
+separator_open  = ""
+separator_close = ""
+progress_label  = { bold = true, fg = "#{{colors.surface.default.hex_stripped}}", bg = "#{{colors.primary.default.hex_stripped}}" }
+progress_normal = { fg = "#{{colors.primary.default.hex_stripped}}", bg = "#363a4f" }
+progress_error  = { fg = "#ed8796", bg = "#363a4f" }
+
+[select]
+border   = { fg = "#{{colors.primary.default.hex_stripped}}" }
+active   = { fg = "#{{colors.primary.default.hex_stripped}}" }
+inactive = { fg = "#6e738d" }
+
+[input]
+border   = { fg = "#{{colors.primary.default.hex_stripped}}" }
+title    = { fg = "#{{colors.primary.default.hex_stripped}}" }
+value    = { fg = "#cad3f5" }
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#{{colors.primary.default.hex_stripped}}" }
+active   = { fg = "#{{colors.surface.default.hex_stripped}}", bg = "#{{colors.primary.default.hex_stripped}}" }
+inactive = { fg = "#6e738d" }
+
+[tasks]
+border  = { fg = "#{{colors.primary.default.hex_stripped}}" }
+title   = { fg = "#{{colors.primary.default.hex_stripped}}" }
+hovered = { fg = "#{{colors.primary.default.hex_stripped}}", underline = true }
+
+[which]
+mask            = { bg = "#1e2030" }
+cand            = { fg = "#8bd5ca" }
+rest            = { fg = "#6e738d" }
+desc            = { fg = "#{{colors.primary.default.hex_stripped}}" }
+separator       = "  "
+separator_style = { fg = "#494d64" }
+
+[filetype]
+rules = [
+  { mime = "image/*",  fg = "#f5bde6" },
+  { mime = "video/*",  fg = "#c6a0f6" },
+  { mime = "audio/*",  fg = "#8bd5ca" },
+  { mime = "text/*",   fg = "#a6da95" },
+  { mime = "application/zip",    fg = "#eed49f" },
+  { mime = "application/x-tar", fg = "#eed49f" },
+  { url = "*.toml",  fg = "#eed49f" },
+  { url = "*.json",  fg = "#eed49f" },
+  { url = "*.md",    fg = "#a6da95" },
+  { url = "*.sh",    fg = "#8bd5ca" },
+  { url = "*/",      fg = "#8aadf4" },
+]

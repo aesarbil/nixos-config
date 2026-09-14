@@ -1,0 +1,56 @@
+@import "matugen-colors.rasi"
+
+* {
+    background-color: transparent;
+}
+
+window {
+    width: 100%;
+    height: 220px;
+    location: south;
+    anchor: south;
+    background-color: rgba(16, 20, 16, 85%);
+    border: 0px;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [listview];
+    padding: 10px;
+}
+
+inputbar {
+    enabled: false;
+}
+
+listview {
+    columns: 10;
+    lines: 1;
+    background-color: transparent;
+    scrollbar: false;
+    spacing: 8px;
+}
+
+element {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 4px;
+    orientation: vertical;
+}
+
+element selected {
+    background-color: @blue;
+    border: 2px solid;
+    border-color: @blue;
+}
+
+element-icon {
+    size: 160px;
+    horizontal-align: 0.5;
+}
+
+element-text {
+    enabled: false;
+}
