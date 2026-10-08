@@ -15,6 +15,7 @@
     ./modules/servicios.nix
     ./modules/usuario.nix
     ./modules/paquetes.nix
+    ./modules/kdeconnect.nix
   ];
   # ===========================================================================
   # NIX

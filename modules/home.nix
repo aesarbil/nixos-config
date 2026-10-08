@@ -63,4 +63,10 @@
   # --- hypridle / hyprlock (NO migran a Lua, confirmado issue hyprwm/hyprlock#1034) ---
   home.file.".config/hypr/hypridle.conf".source = ./dotfiles/hypr/hypridle.conf;
   home.file.".config/hypr/hyprlock.conf".source  = ./dotfiles/hypr/hyprlock.conf;
+
+  # --- KDE Connect (demonio + icono en la bandeja, vía graphical-session.target) ---
+  services.kdeconnect = {
+    enable    = true;
+    indicator = true;
+  };
 }
