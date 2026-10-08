@@ -16,6 +16,8 @@
     ./modules/usuario.nix
     ./modules/paquetes.nix
     ./modules/kdeconnect.nix
+    ./modules/audio.nix
+    ./modules/bluetooth.nix
   ];
   # ===========================================================================
   # NIX
