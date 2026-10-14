@@ -16,7 +16,6 @@
     ./modules/usuario.nix
     ./modules/paquetes.nix
     ./modules/kdeconnect.nix
-    ./modules/audio.nix
     ./modules/bluetooth.nix
   ];
   # ===========================================================================
@@ -34,10 +33,18 @@
       "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
     ];
   };
-  nix.gc = {
-    automatic = true;
-    dates     = "weekly";
-    options   = "--delete-older-than 30d";
+  # ===========================================================================
+  # NH — rebuilds con progreso/diff + limpieza automática
+  # (sustituye a nix.gc: no tener los dos a la vez)
+  # ===========================================================================
+  programs.nh = {
+    enable = true;
+    flake  = "/etc/nixos";
+    clean = {
+      enable    = true;
+      dates     = "weekly";
+      extraArgs = "--keep-since 30d --keep 5";
+    };
   };
   # ===========================================================================
   # VERSIÓN (no cambiar manualmente)
