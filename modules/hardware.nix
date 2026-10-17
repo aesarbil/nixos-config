@@ -18,17 +18,11 @@
   # --- Parámetros del kernel para Skylake + HD 520 ---
   boot.kernelParams = [
 
-    # Frame Buffer Compression: comprime el framebuffer en VRAM.
-    # Menos ancho de banda de memoria = menos consumo del iGPU
-    "i915.enable_fbc=1"
 
     # Desactiva el watchdog NMI: genera interrupciones periódicas que en
     # un portátil de uso normal no sirven para nada
     "nmi_watchdog=0"
 
-    # El kernel escribe datos pendientes a disco cada 60s en vez de cada 5s.
-    # Permite que el SSD entre en suspensión más tiempo entre escrituras
-    "vm.dirty_writeback_centisecs=6000"
   ];
 
   # --- Touchpad: forzar I2C en lugar de PS/2 legacy ---
